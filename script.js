@@ -53,7 +53,7 @@ let words = [
 console.log(words.length);
 
 const randomWord = () => {
-  let x = Math.floor(Math.random() * 49) + 1;
+  let x = Math.floor(Math.random() * words.length);
   console.log(x);
   let word = words[x];
   document.getElementById("result").innerHTML = word;
